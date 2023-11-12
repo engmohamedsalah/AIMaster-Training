@@ -1,6 +1,6 @@
 # this file that cheat sheet of the python lib
 
-for creating Histogram
+*******************for creating Histogram*****************
 #pandas built-in visualization
 PTS['PTS'].hist(by=PTS['Pos'])
 
@@ -14,3 +14,12 @@ import matplotlib.pyplot as plt
 
 g = sns.FacetGrid(PTS, col="Pos")
 g.map(plt.hist, "PTS");
+
+
+
+*******************Box plots*******************
+#pandas built-in visualization
+PTS.boxplot(column='PTS', by='Pos')
+
+import seaborn as sns
+sns.boxplot(x = 'Pos', y = 'PTS', data = PTS) 
