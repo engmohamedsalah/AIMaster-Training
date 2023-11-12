@@ -1,0 +1,16 @@
+# this file that cheat sheet of the python lib
+
+for creating Histogram
+#pandas built-in visualization
+PTS['PTS'].hist(by=PTS['Pos'])
+
+PTS['PTS'].hist(by=PTS['Pos'], layout=(1,5), figsize=(16,2))
+layout = 1,5  : 1 row 5 columns 
+figsize 16,2 size of the figure
+
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+g = sns.FacetGrid(PTS, col="Pos")
+g.map(plt.hist, "PTS");
