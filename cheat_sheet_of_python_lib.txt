@@ -23,3 +23,10 @@ PTS.boxplot(column='PTS', by='Pos')
 
 import seaborn as sns
 sns.boxplot(x = 'Pos', y = 'PTS', data = PTS) 
+
+sns.boxplot(x = 'Pos', y = 'PTS', data = PTS) 
+sns.stripplot(x = 'Pos', y = 'PTS', data = PTS,
+              jitter=True, 
+              marker='o',
+              alpha=0.8, 
+              color="black")
